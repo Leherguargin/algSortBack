@@ -9,5 +9,5 @@ public class WorkshopsApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(WorkshopsApplication.class, args);
 	}
-
+/// a dobra, przegląraka wysyła get, a my mamy post xd
 }
