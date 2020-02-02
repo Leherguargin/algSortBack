@@ -7,11 +7,11 @@ import pl.awsome.workshops.tools.algorithms.QuickSort;
 
 import java.util.Random;
 
-@CrossOrigin
 @RestController
 @RequestMapping(value = "sort")
 public class SortController {
 
+    @CrossOrigin(origins = "http://inzml.herokuapp.com")
     @PostMapping(value = "quick-sort")  //localhost:8091/sort/quick-sort
     public DaneDoZwrocenia sortQuickSort(@RequestBody DaneDoSortowaniaDTO daneDoSortowaniaDTO){
         System.out.println(daneDoSortowaniaDTO);
