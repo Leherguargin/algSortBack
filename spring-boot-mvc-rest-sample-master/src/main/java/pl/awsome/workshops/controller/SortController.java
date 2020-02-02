@@ -7,6 +7,7 @@ import pl.awsome.workshops.tools.algorithms.QuickSort;
 
 import java.util.Random;
 
+@CrossOrigin
 @RestController
 @RequestMapping(value = "sort")
 public class SortController {
