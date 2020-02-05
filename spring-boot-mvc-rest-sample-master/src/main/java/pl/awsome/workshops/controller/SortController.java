@@ -11,8 +11,8 @@ import java.util.Random;
 @RequestMapping(value = "sort")
 public class SortController {
 
-    @CrossOrigin(origins = "http://inzml.herokuapp.com")
-    @PostMapping(value = "quick-sort")  //localhost:8091/sort/quick-sort
+    @CrossOrigin(origins = "http://inzml.herokuapp.com, http://localhost:3000")
+    @PostMapping(value = "quick-sort")  //
     public DaneDoZwrocenia sortQuickSort(@RequestBody DaneDoSortowaniaDTO daneDoSortowaniaDTO){
         System.out.println(daneDoSortowaniaDTO);
         return generateTimes(daneDoSortowaniaDTO.getOdIlu(), daneDoSortowaniaDTO.getDoIlu(), daneDoSortowaniaDTO.getCoIle());
