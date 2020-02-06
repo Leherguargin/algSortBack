@@ -9,8 +9,19 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 public class DaneDoZwrocenia {
 
-    private long[] times;
-    private int[] countOfelements;
+    private long sortingTime;
+    private int countOfelements;
 
+    public long getSortingTime() {
+        return sortingTime;
+    }
+
+    public void setSortingTime(long sortingTime) {
+        this.sortingTime = sortingTime;
+    }
+
+    public void setCountOfelements(int countOfelements) {
+        this.countOfelements = countOfelements;
+    }
 }
 
