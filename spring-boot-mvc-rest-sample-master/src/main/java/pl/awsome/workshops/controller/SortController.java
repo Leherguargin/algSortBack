@@ -33,7 +33,7 @@ public class SortController {
         QuickSort quickSort = new QuickSort();
         for(int value = odIlu, i = 0; value < doIlu; value += coIle, i++){
             int[] arr = generateTableOfRandomInts(value);
-            daneDoZwrocenia[i] = new DaneDoZwrocenia(System.nanoTime(), value);
+            daneDoZwrocenia[i] = new DaneDoZwrocenia(System.nanoTime(), value, String.valueOf(value));
             quickSort.sort(arr); //dla zbyt duzych liczb wywala wyjątek java.lang.StackOverflowError: null (12k wywala, 11k nie)
             daneDoZwrocenia[i].setSortingTime(System.nanoTime()-daneDoZwrocenia[i].getSortingTime());
             System.out.println(value + " " + daneDoZwrocenia[i].getSortingTime()*10e-9);

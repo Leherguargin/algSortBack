@@ -11,6 +11,7 @@ public class DaneDoZwrocenia {
 
     private long recursiveQuickSort;//to trzeba zmienic zeby zwracac dane o jakie prosi uzytkownik
     private int countOfelements;
+    private String name;
 
     public long getSortingTime() {
         return recursiveQuickSort;
