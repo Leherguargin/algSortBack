@@ -9,15 +9,15 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 public class DaneDoZwrocenia {
 
-    private long sortingTime;
+    private long recursiveQuickSort;//to trzeba zmienic zeby zwracac dane o jakie prosi uzytkownik
     private int countOfelements;
 
     public long getSortingTime() {
-        return sortingTime;
+        return recursiveQuickSort;
     }
 
     public void setSortingTime(long sortingTime) {
-        this.sortingTime = sortingTime;
+        this.recursiveQuickSort = sortingTime;
     }
 
     public void setCountOfelements(int countOfelements) {

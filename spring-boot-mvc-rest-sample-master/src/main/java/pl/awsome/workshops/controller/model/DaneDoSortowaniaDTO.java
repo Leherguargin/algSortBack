@@ -6,7 +6,7 @@ import lombok.Data;
 @Data
 public class DaneDoSortowaniaDTO {
     private enum DlaJakichDanych{ losowe, bezPowtorzen, prawiePosortowane, wsteczniePosortowane};
-    //private enum JakieAlgorytmy{bubbleSort, bubbleFlag, recursiveQuickSort, iterativeQuickSort}; //lista wszysktich mozliwych
+    //private enum JakieAlgorytmy{bubbleSort, bubbleFlag, recursiveQuickSort, SelectionSort}; //lista wszysktich mozliwych
 
     private Boolean[] jakie_algorytmy;
     private int odIlu;
